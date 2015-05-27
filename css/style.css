@@ -1,0 +1,17 @@
+#sketchpad {
+    width: 800px;
+    height: 600px;
+    margin: 30px auto;
+    border: 2px solid black;
+}
+
+.row {
+    display: block;
+    border: 1px solid black;
+}
+
+.square {
+    border: 1px solid black;
+    display: inline;
+    margin: 0px;
+}
