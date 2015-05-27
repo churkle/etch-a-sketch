@@ -7,11 +7,13 @@
 
 .row {
     display: block;
-    border: 1px solid black;
+    width: 100%;
+    background-color: deepskyblue;
 }
 
 .square {
-    border: 1px solid black;
-    display: inline;
-    margin: 0px;
+    height: 100%;
+    display: inline-block;
+    background-color: yellow;
+    outline: 1px solid blue;
 }
