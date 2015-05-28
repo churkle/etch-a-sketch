@@ -5,15 +5,19 @@ function createGrid(numRows)
     
     $("#sketchpad").empty();
     
+    var myHtml = "";
+    var myBoxes = "";
     for(var i = 0; i < numRows; i++)
     {
-        $("#sketchpad").append($("<div class=row/>").height(rowHeight));
-        
-        for(var j = 0; j < numRows; j++)
-        {
-            $(".row:last-child").append($("<div class=square/>").width(columnWidth));
-        }
+        myHtml += "<div class=row/>";
+        myBoxes += "<div class=square/>";
     }
+    
+    $("#sketchpad").html(myHtml);
+    $(".row").height(rowHeight);
+    $(".row").html(myBoxes);
+    $(".square").width(columnWidth);
+    
 }
 
 function buttonClick()
