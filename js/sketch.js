@@ -3,6 +3,8 @@ function createGrid(numRows)
     var rowHeight = $("#sketchpad").height() / numRows;
     var columnWidth = $("#sketchpad").width() / numRows;
     
+    $("#sketchpad").empty();
+    
     for(var i = 0; i < numRows; i++)
     {
         $("#sketchpad").append($("<div class=row/>").height(rowHeight));
@@ -14,11 +16,15 @@ function createGrid(numRows)
     }
 }
 
-
+function buttonClick()
+{
+    var numRows = prompt("How many rows/columns do you want?");
+    createGrid(numRows);
+}
 
 $(document).ready(function () {
     createGrid(16);
-    $(".square").on("mouseenter", function(){
+    $("#sketchpad").on("mouseenter", ".square", function(){
         $(this).addClass("colored");
     });
 });
