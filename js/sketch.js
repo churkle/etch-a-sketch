@@ -14,6 +14,11 @@ function createGrid(numRows)
     }
 }
 
+
+
 $(document).ready(function () {
     createGrid(16);
+    $(".square").on("mouseenter", function(){
+        $(this).addClass("colored");
+    });
 });

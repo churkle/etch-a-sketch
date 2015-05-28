@@ -14,6 +14,10 @@
 .square {
     height: 100%;
     display: inline-block;
-    background-color: yellow;
+    background-color: white;
     outline: 1px solid blue;
+}
+
+.colored {
+    background-color: black;
 }
